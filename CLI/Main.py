@@ -6,6 +6,7 @@ if __name__ == '__main__':
     manager = Manager()
     strategy = Strategy(manager)
     m = Menu(manager, strategy)
+    # hello .
     m.start()
 
     m.join()
