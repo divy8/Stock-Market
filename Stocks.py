@@ -11,4 +11,6 @@ class Stocks:
         if instrument_token in self.stocks_list:
             return self.stocks_list[instrument_token]
         else:
-            return Stock(instrument_token)
+            ss = Stock(instrument_token)
+            self.stocks_list[instrument_token] = ss
+            return ss
